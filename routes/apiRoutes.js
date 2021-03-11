@@ -1,28 +1,23 @@
 // dependencies
 const fs = require('fs');
-const path = require('path');
 const uniqid = require('uniqid');
 
 // routing
 module.exports = (app) => {
 
-    // return as JSON and send to front end
+    // user wants to see saved notes - GET
     app.get('/api/notes', (req, res) => {
 
         // read the db.json file and save as rawData
         const rawData = fs.readFileSync('./db/db.json');
         // parse rawData to create usable content
         const notesData = JSON.parse(rawData);
-        
-        res.json(notesData);
 
-        console.log(notesData);
-        console.log(typeof notesData);
+        // display data
+        res.json(notesData);
     });
     
-    //console.log(notesData);
-
-    // new note has been entered...
+    // user wants to add a new note - POST
     app.post('/api/notes', (req, res) => {
 
         // read the db.json file and save as rawData
@@ -44,11 +39,13 @@ module.exports = (app) => {
         // rewrite the db.json file with the new note now added
         fs.writeFileSync('./db/db.json', JSON.stringify(notesData));
 
-        // display the new note
-        res.json(true);
+        // display data
+        res.json(notesData);
         
+        console.log("NOTES TO DISPLAY");
         console.log(notesData);
     });
+
     
 }
 

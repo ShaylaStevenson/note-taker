@@ -1,7 +1,5 @@
 // dependencies
 const express = require('express');
-const path = require('path');
-const fs = require('fs');
 
 // setting up express
 const app = express();
