@@ -41,9 +41,6 @@ module.exports = (app) => {
 
         // display data
         res.json(notesData);
-        
-        console.log("NOTES TO DISPLAY");
-        console.log(notesData);
     });
 
     // user wants to remove a note - DELETE
