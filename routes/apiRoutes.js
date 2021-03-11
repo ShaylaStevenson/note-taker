@@ -25,6 +25,7 @@ module.exports = (app) => {
             text: req.body.text
         };
 
+        
         // push the new note to the array containing all notes
         notesData.push(newNote);
 
