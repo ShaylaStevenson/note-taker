@@ -29,7 +29,7 @@ module.exports = (app) => {
         const rawData = fs.readFileSync('./db/db.json');
         // parse rawData to create usable content
         const notesData = JSON.parse(rawData);
-
+        
         //create a newNote object to store input in
         const newNote = {
             // use npm's Uniqid package to generate an id for the new note
