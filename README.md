@@ -1,4 +1,4 @@
-# Note Tracker ![badge-image](https://img.shields.io/static/v1?label=license&message=MIT&color=blue)  
+# Note Taker ![badge-image](https://img.shields.io/static/v1?label=license&message=MIT&color=blue)  
 Manage your daily notes with the Note Taker application. Note Taker will allow the user to enter new notes, save, view and delete. The application is powered by Express.js.
 
 ![demo](public/assets/note-demo.png)
