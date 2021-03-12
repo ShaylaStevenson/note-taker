@@ -13,7 +13,7 @@ Manage your daily notes with the Note Taker application. Note Taker will allow t
   * [License](#License)
 
 ## Deployment
-Use application at [Heroku]()
+Use application at [Heroku](https://secure-waters-76312.herokuapp.com/)
 
 View project repository at [Github](https://github.com/ShaylaStevenson/note-taker)
 
